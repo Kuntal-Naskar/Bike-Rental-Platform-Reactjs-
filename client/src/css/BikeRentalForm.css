@@ -1,0 +1,177 @@
+.booking-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  z-Index: 3;
+}
+
+.booking-form-container {
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), var(--f1) no-repeat fixed center !important;
+  animation: scale-up 0.5s ease-in-out forwards;
+  z-Index: 3;
+}
+
+
+.cross {
+
+  color: red;
+  height: 30px;
+  width: 30px;
+  margin-Left: 420px;
+  margin-Top: -100px;
+
+
+}
+
+.cross:hover {
+  color: brown;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
+
+.coupon-section {
+  max-height: 100px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.coupon-item {
+  margin-bottom: 5px;
+}
+
+.booking-form-container .button-container {
+  display: flex;
+  gap: 10px;
+  /* Adds space between the buttons */
+  justify-content: space-between;
+  /* Distributes buttons evenly */
+}
+
+.booking-form-container:hover {
+  transform: scale(1.02);
+}
+
+.booking-form-container h2 {
+  font-family: "Faculty Glyphic", sans-serif;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000;
+  color: white;
+  text-Shadow: rgba(0, 0, 0, 0.7) 0px 3px 8px;
+  font-weight: bold;
+}
+
+.booking-form-container h2 .icon {
+  margin-Bottom: 12px;
+}
+
+.booking-form-container label {
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+  display: block;
+}
+
+.booking-form-container input {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.booking-form-container button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  background-color: rgb(83, 164, 230);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.booking-form-container button:hover {
+  background-color: rgb(15, 115, 197);
+}
+
+.booking-form-container .reset-button {
+  background-color: red;
+  transition: background-color 0.3s;
+}
+
+.booking-form-container .reset-button:hover {
+  background-color: darkred;
+}
+
+.confirmation-message {
+  text-align: center;
+}
+
+.booking-form-container .cancel-button {
+  background-color: rgb(255, 123, 0);
+  transition: background-color 0.3s;
+}
+
+.booking-form-container .cancel-button:hover {
+  background-color: rgb(177, 90, 9);
+}
+
+.confirmation-message p {
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+@media (max-width: 560px) {
+  .booking-form-container {
+    max-width: 400px;
+    max-height: 80vh;
+  }
+  .cross {
+    margin-Left: 300px;
+    margin-Top: -100px;
+  }
+  .booking-form-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .booking-form-container label {
+    margin-bottom: 5px;
+  }
+  .booking-form-container input {
+    font-size: 12px;
+  }
+  .coupon-section {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,210 @@
+/*.larea{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}*/
+.larea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Add this if you want everything stacked vertically */
+  text-align: center;
+ /* height: 100vh; /* Optional: makes the container take the full viewport height */
+}
+
+.admin-box {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+  align-items: center; /* Center input fields horizontally */
+  padding: 20px; 
+  width: 300px;
+  gap: 10px; /* Space between input fields */
+}
+
+.admin-box input {
+  width: 100%; 
+  padding: 10px; 
+  color: black;
+  background: transparent;
+  border-radius: 15px;
+  border: 2px solid black;
+}
+
+  .lcard{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.45)) ,url('/public/login.jpg')!important;
+    background-size: cover;
+    background-position: center;
+    width: 700px;
+    height: 500px;
+    margin-top: 50px;
+    
+  }
+.lcard h1{
+  padding-top: 10px;
+  font-Family: sans-serif;
+  text-Shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  color: var(--background-color);
+  font-size: 3.5rem;
+ font-weight: bold;
+}
+.log{
+/* margin-left: 100px;
+ /*margin-top: 20px;
+ margin-left: 620px;*/
+ 
+ margin-top: -100px;
+ margin-left: 600px;
+ border-radius: 150px;
+ border: none;
+ background-color: lightsalmon ;
+ border: 2px solid black;
+ 
+}
+.log:hover{
+ box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+ color:white;
+ background-color: brown;
+ border: 1px solid black;
+ border-radius: 150px;
+}
+.admin-area{
+  margin-left: 200px;
+  margin-top: 60px;  
+ 
+}
+/*.admin-box{
+  
+  background-color: aqua;
+  display: flex;
+      
+}
+.admin-box input{
+  width: 300px; 
+   
+  padding: 10px; 
+  color: black;
+                    background: transparent; 
+                    border-Radius: 15px; 
+                    border: 2px solid black
+                  
+}*/
+
+.lgbtn{
+  width: 90px;
+  font-weight: bold;
+    border-Radius: 10px;
+    border: none;
+    background-color: lightsalmon ;
+    border: 2px solid black;
+  }
+  .lgbtn:hover{
+    color:white;
+    background-color: brown;
+    border: 1px solid black;
+
+  }/*
+  .menu{
+    height: 60px;
+    background-color:  var(--background-color);
+    padding-top: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+  }
+.menu nav ul li{
+    display: inline-block;
+  }
+.menu nav ul li .nav{
+    color: #fff;
+    font-size: 19px;
+    margin-left: 35px;
+    padding: 3px 8px;
+    border-radius: 10px;
+  }
+.menu nav ul li .nav:hover{
+    color: black;
+    text-decoration: none;
+  }
+.menu nav ul li .nav{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+     
+  }
+.menu nav ul li .nav::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: brown;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  
+  }
+.menu nav ul li .nav:hover::after{
+    width: 90%;
+    margin-top: -5px;
+    margin-left: 5px;
+  }
+.botam:hover{
+    background: brown;
+    color: white;
+  
+  }
+.botam{
+    margin-left: 1000px;
+    margin-top: -150px;
+    background-color: lightsalmon;
+    border:0px;
+    color: black;
+    border-radius:10px;
+    width:85px;
+    height:30px;
+    text-align:right;
+    box-Shadow: rgba(0, 0, 0, 0.5) 2px 3px 8px;
+}*/
+
+@media (max-width: 768px) {
+  .lcard{
+    width: 500px;
+    height: 400px;
+    margin-top: 100px;
+  }
+  .lcard h1{
+    padding-top: 8px;
+    font-size: 3rem;
+  }
+  .log{
+    margin-top: -120px;
+    margin-left: 400px;
+  }
+  .admin-area{
+    margin-left: 100px;
+    margin-top: 0px;  
+   
+  }
+}
+
+@media (max-width: 488px) {
+  .lcard{
+    width: 400px;
+    height: 350px;
+    margin-top: 100px;
+  }
+  .lcard h1{
+    padding-top: 8px;
+    font-size: 2.5rem;
+  }
+  .log{
+    margin-top: -120px;
+    margin-left: 300px;
+  }
+  .admin-area{
+    margin-left: 50px;
+    margin-top: 0px;  
+   
+  }
+}

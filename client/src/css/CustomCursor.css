@@ -1,0 +1,34 @@
+/* CustomCursor.css */
+/* CustomCursor.css */
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    border: 2px solid black;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.3s ease;
+    cursor: none;
+}
+
+.custom-cursor.click-animation {
+    animation: click-effect 0.6s ease forwards;
+}
+
+/* Click effect animation */
+@keyframes click-effect {
+    0% {
+        transform: translate(-50%, -50%) scale(2);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5); /* Increase size */
+        background-color: rgba(0, 0, 0, 0.2); /* Optional: Change color */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        background-color: var(--background-color); /* Reset to original color */
+    }
+}

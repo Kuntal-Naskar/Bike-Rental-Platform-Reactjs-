@@ -1,0 +1,78 @@
+/* Spinner.css */
+/*.Mspinner {
+   
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    /*animation: spin 0.5s linear infinite;
+    /*margin-top: 150px;
+    margin-left: 500px;*/
+     /* border: 8px solid #f3f3f3; 
+    border-top: 8px solid var(--background-color); 
+    border-radius: 50%; */
+    /*margin-left: 550px;
+    margin-top: 180px;
+*/
+
+ /* }
+  
+  /* @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+
+ 
+  .Mspinner {
+    width: 300px;
+    height: 300px;
+    z-index: 3;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+@media (max-width: 500px) {
+  .Mspinner {
+      width: 150px;
+      height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .Mspinner {
+      width: 200px;
+      height: 200px;
+  }
+}
+/* Make it responsive */
+/*@media (min-width: 600px) {
+    .Mspinner {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Mspinner {
+        width: 200px;
+        height: 200px;
+    }
+}*/
+/*
+@media (min-width: 992px) {
+    .Mspinner {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Mspinner {
+        width: 300px;
+        height: 300px;
+    }
+}
+*/
